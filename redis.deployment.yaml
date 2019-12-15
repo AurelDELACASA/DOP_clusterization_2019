@@ -5,13 +5,13 @@ metadata:
   labels:
     app: redis
 spec:
-  replicas: 0
+  replicas: 1
   selector:
     matchLabels:
       app: redis
   template:
     metadata:
-      name: redispod
+      name: redis
       labels:
         app: redis
     spec:
